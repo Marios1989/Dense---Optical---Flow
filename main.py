@@ -22,7 +22,7 @@ while 1:
     hsv[..., 2] = cv.normalize(mag, None, 0, 255, cv.NORM_MINMAX)
     bgr = cv.cvtColor(hsv, cv.COLOR_HSV2BGR)
 
-    out.write(frame2)
+    out.write(bgr)
 
     cv.imshow('frame2', bgr)
 
